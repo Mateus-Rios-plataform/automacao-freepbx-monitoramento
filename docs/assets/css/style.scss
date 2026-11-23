@@ -1,0 +1,9 @@
+---
+---
+@import "{{ site.theme }}";
+
+.main-content { max-width: 60rem; }
+.main-content table { display: block; overflow-x: auto; max-width: 100%; }
+.main-content table th, .main-content table td { vertical-align: top; }
+.main-content img { border: 1px solid #dde4e6; border-radius: 6px; }
+.main-content blockquote { border-left: .3rem solid #159957; }

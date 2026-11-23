@@ -1,0 +1,40 @@
+name: Relatar um problema
+description: Algo não funcionou como a documentação diz
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Não cole** senhas, chaves, IPs reais, IDs de grupo de WhatsApp nem a sua `centrais.csv`. Troque por valores fictícios.
+        Falhas de **segurança** não vão aqui: veja SECURITY.md.
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do projeto
+      description: Rode `git log -1 --format=%h` dentro da pasta do projeto.
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Servidor do monitor e versão do FreePBX
+      placeholder: "Debian 12 / Ubuntu 24.04; FreePBX 15, chan_sip ou PJSIP"
+    validations:
+      required: true
+  - type: textarea
+    id: passo
+    attributes:
+      label: Em qual página e passo da documentação você parou?
+    validations:
+      required: true
+  - type: textarea
+    id: mensagem
+    attributes:
+      label: Mensagem que apareceu (copie e cole, sem dados sensíveis)
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava que acontecesse?

@@ -1,0 +1,7 @@
+# Finais de linha: LF em tudo (scripts bash quebram com CRLF), exceto o modelo de planilha, que
+# precisa ficar com BOM + CRLF como o Excel salva.
+* text=auto eol=lf
+*.sh text eol=lf
+*.png binary
+*.xlsx binary
+centrais-modelo.csv -text

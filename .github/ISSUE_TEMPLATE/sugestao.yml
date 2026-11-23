@@ -1,0 +1,24 @@
+name: Sugerir uma melhoria
+description: Uma ideia para o projeto (novo canal de alerta, nova regra, melhoria na documentação)
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lembre da regra de ouro: **a automação só lê e avisa**. Ideias que alterem centrais não serão aceitas.
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema você quer resolver?
+    validations:
+      required: true
+  - type: textarea
+    id: ideia
+    attributes:
+      label: Como você imagina a solução?
+  - type: checkboxes
+    id: ajuda
+    attributes:
+      label: Posso ajudar?
+      options:
+        - label: Posso abrir um pull request para isso

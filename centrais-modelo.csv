@@ -1,0 +1,3 @@
+﻿chave;nome;ip;porta_ssh;ari;web;troncos;ips_protegidos;grupo_jid
+sede;Central (sede);10.0.0.10;22;nao;sim;SIP-OPERADORA;203.0.113.10;
+filial01;Filial 01;10.0.1.10;22;nao;sim;SIP-OPERADORA;203.0.113.10;

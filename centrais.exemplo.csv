@@ -1,0 +1,16 @@
+# Planilha de centrais monitoradas. Separador: ponto e virgula (;). Linhas com # sao ignoradas.
+# Copie este arquivo para centrais.csv e preencha uma linha por central (sede + cada filial).
+#
+# chave          id curto, so letras minusculas e numeros (ex.: sede, filial01)
+# nome           nome que aparece no alerta do WhatsApp
+# ip             IP da central FreePBX (o que o servidor de monitoramento alcanca)
+# porta_ssh      porta do SSH (padrao 22)
+# ari            sim/nao - a central tem ARI (porta 8088) habilitada? (na maioria das producoes: nao)
+# web            sim/nao - checar o painel web por HTTPS (padrao sim)
+# troncos        nomes dos troncos SIP/IAX a vigiar, separados por virgula (ex.: SIP-OPERADORA)
+# ips_protegidos IPs de operadora que NUNCA devem ser banidos pelo Fail2Ban, separados por virgula
+# grupo_jid      (opcional) grupo de WhatsApp desta central; vazio = grupo geral
+chave;nome;ip;porta_ssh;ari;web;troncos;ips_protegidos;grupo_jid
+sede;Central (sede);10.0.0.10;22;nao;sim;SIP-OPERADORA;203.0.113.10;
+filial01;Filial 01;10.0.1.10;22;nao;sim;SIP-OPERADORA;203.0.113.10;
+filial02;Filial 02;10.0.2.10;22;nao;sim;;;
